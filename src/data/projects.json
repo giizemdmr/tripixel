@@ -1,0 +1,67 @@
+[
+    {
+      "id": 1,
+      "title": "Modern Design Studio",
+      "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop",
+      "designer": "Studio One",
+      "votes": 102,
+      "description": "A sleek and modern design studio website featuring clean typography, minimalist layouts, and intuitive user experience. Perfect for creative agencies looking to showcase their portfolio with style."
+    },
+    {
+      "id": 2,
+      "title": "E-commerce Platform",
+      "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
+      "designer": "PixelKart",
+      "votes": 86,
+      "description": "A comprehensive e-commerce solution with advanced filtering, seamless checkout process, and mobile-first responsive design. Built with modern web technologies for optimal performance."
+    },
+    {
+      "id": 3,
+      "title": "Personal Blog & Portfolio",
+      "image": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop",
+      "designer": "Merve Aydın",
+      "votes": 73,
+      "description": "A beautiful personal blog and portfolio website featuring dark mode, smooth animations, and elegant typography. Perfect for writers, designers, and creative professionals."
+    },
+    {
+      "id": 4,
+      "title": "Restaurant Booking App",
+      "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=600&fit=crop",
+      "designer": "FoodTech",
+      "votes": 156,
+      "description": "An intuitive restaurant booking application with real-time availability, table management, and integrated payment system. Designed for both customers and restaurant owners."
+    },
+    {
+      "id": 5,
+      "title": "Fitness Tracking Dashboard",
+      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
+      "designer": "FitLife",
+      "votes": 94,
+      "description": "A comprehensive fitness tracking dashboard with workout planning, progress visualization, and social features. Helps users stay motivated and achieve their fitness goals."
+    },
+    {
+      "id": 6,
+      "title": "Travel Planning Platform",
+      "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=600&fit=crop",
+      "designer": "Wanderlust",
+      "votes": 128,
+      "description": "A beautiful travel planning platform with interactive maps, itinerary creation, and booking integration. Makes trip planning effortless and enjoyable."
+    },
+    {
+      "id": 7,
+      "title": "Music Streaming Interface",
+      "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop",
+      "designer": "SoundWave",
+      "votes": 67,
+      "description": "A modern music streaming interface with personalized playlists, advanced search, and seamless cross-device synchronization. Redefines the music listening experience."
+    },
+    {
+      "id": 8,
+      "title": "Educational Learning Platform",
+      "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop",
+      "designer": "EduTech",
+      "votes": 89,
+      "description": "An innovative educational platform with interactive courses, progress tracking, and collaborative learning features. Designed to make learning engaging and effective."
+    }
+  ]
+  
