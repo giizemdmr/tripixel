@@ -1,35 +1,49 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
-import Gallery from "./pages/Gallery"
-import ProjectDetail from "./pages/ProjectDetail"
-import Submit from "./pages/Submit"
-import About from "./pages/About"
-import NotFound from "./pages/NotFound"
-import Register from "./pages/Register"
 import Login from "./pages/Login"
+import Register from "./pages/Register"
+import About from "./pages/About"
 import { AuthProvider } from "./context/AuthContext"
 
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+import { useEffect, useState } from "react"
 
 function App() {
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 1200)
+    return () => clearTimeout(timer)
+  }, [])
+
+  if (loading) {
+    return (
+      <div className="fixed inset-0 flex items-center justify-center bg-white dark:bg-gray-900 z-50 transition-opacity duration-500 animate-fade-in">
+        <img
+          src="/images/trivess-logo.png"
+          alt="Trivess Logo"
+          className="w-72 h-72 md:w-96 md:h-96 animate-bounce"
+        />
+      </div>
+    )
+  }
+
   return (
     <Router>
-       <AuthProvider>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/project/:id" element={<ProjectDetail />} />
-        <Route path="/submit" element={<Submit />} />
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<NotFound />} />
-        <Route path="/login" element={<Login />} />
-<Route path="/register" element={<Register />} />
-      </Routes>
-      <Footer />
-    </AuthProvider>
-  </Router>
+      <AuthProvider>
+        <Header />
+        <main className="pt-20">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </main>
+        <Footer />
+      </AuthProvider>
+    </Router>
   )
 }
 
