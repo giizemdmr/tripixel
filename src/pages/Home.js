@@ -12,6 +12,7 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState('home')
   const [selectedService, setSelectedService] = useState(0)
   const [openFAQ, setOpenFAQ] = useState(null)
+  const [showServiceDetail, setShowServiceDetail] = useState(false)
 
   const services = [
     {
@@ -21,7 +22,32 @@ export default function Home() {
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
       ),
-      detail: "#web-design"
+      detail: "#web-design",
+      detailedInfo: {
+        features: [
+          "Responsive tasarım (mobil uyumlu)",
+          "SEO optimizasyonu",
+          "Hızlı yükleme süreleri",
+          "Modern ve kullanıcı dostu arayüz",
+          "İçerik yönetim sistemi (CMS)",
+          "Güvenlik sertifikaları",
+          "7/24 teknik destek",
+          "Google Analytics entegrasyonu"
+        ],
+        process: [
+          "Analiz ve planlama (1-2 gün)",
+          "Tasarım taslağı (3-5 gün)",
+          "Geliştirme (1-2 hafta)",
+          "Test ve optimizasyon (2-3 gün)",
+          "Yayına alma ve eğitim"
+        ],
+        pricing: {
+          basic: "5,000 - 10,000 TL",
+          advanced: "10,000 - 20,000 TL",
+          premium: "20,000+ TL"
+        },
+        timeline: "2-6 hafta"
+      }
     },
     {
       title: "Dijital Pazarlama",
@@ -30,7 +56,32 @@ export default function Home() {
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
       ),
-      detail: "#digital-marketing"
+      detail: "#digital-marketing",
+      detailedInfo: {
+        features: [
+          "Sosyal medya hesap yönetimi",
+          "İçerik üretimi ve paylaşımı",
+          "Google Ads kampanyaları",
+          "Facebook & Instagram reklamları",
+          "E-posta pazarlaması",
+          "Influencer işbirlikleri",
+          "Performans raporlama",
+          "Topluluk yönetimi"
+        ],
+        process: [
+          "Marka analizi ve hedef kitle belirleme",
+          "Strateji geliştirme",
+          "İçerik takvimi oluşturma",
+          "Kampanya yönetimi",
+          "Performans takibi ve optimizasyon"
+        ],
+        pricing: {
+          basic: "3,000 TL/ay",
+          advanced: "6,000 TL/ay",
+          premium: "12,000 TL/ay"
+        },
+        timeline: "Sürekli hizmet"
+      }
     },
     {
       title: "SEO (Arama Motoru Optimizasyonu)",
@@ -39,7 +90,33 @@ export default function Home() {
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
       ),
-      detail: "#seo"
+      detail: "#seo",
+      detailedInfo: {
+        features: [
+          "Anahtar kelime analizi ve araştırması",
+          "Teknik SEO optimizasyonu",
+          "İçerik optimizasyonu",
+          "Link building stratejileri",
+          "Yerel SEO optimizasyonu",
+          "Sayfa hızı optimizasyonu",
+          "Mobil uyumluluk kontrolü",
+          "Aylık performans raporları"
+        ],
+        process: [
+          "Site analizi ve raporlama",
+          "Anahtar kelime stratejisi",
+          "Teknik optimizasyonlar",
+          "İçerik geliştirme",
+          "Link building çalışmaları",
+          "Performans takibi"
+        ],
+        pricing: {
+          basic: "2,000 TL/ay",
+          advanced: "4,000 TL/ay",
+          premium: "8,000 TL/ay"
+        },
+        timeline: "3-6 ay ilk sonuçlar"
+      }
     },
     {
       title: "E-Ticaret Çözümleri",
@@ -48,7 +125,32 @@ export default function Home() {
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 7M7 13l-2 9m13-9l2 9m-5-9V6a2 2 0 10-4 0v7m4 0H9" /></svg>
       ),
-      detail: "#ecommerce"
+      detail: "#ecommerce",
+      detailedInfo: {
+        features: [
+          "Güvenli ödeme sistemleri",
+          "Stok yönetimi",
+          "Müşteri yönetimi",
+          "Sipariş takip sistemi",
+          "Çoklu dil desteği",
+          "Mobil uyumlu tasarım",
+          "Analitik ve raporlama",
+          "Entegrasyon API'leri"
+        ],
+        process: [
+          "İhtiyaç analizi ve planlama",
+          "Tasarım ve geliştirme",
+          "Ödeme sistemi entegrasyonu",
+          "Test ve optimizasyon",
+          "Eğitim ve yayına alma"
+        ],
+        pricing: {
+          basic: "15,000 - 25,000 TL",
+          advanced: "25,000 - 50,000 TL",
+          premium: "50,000+ TL"
+        },
+        timeline: "4-8 hafta"
+      }
     }
   ]
 
@@ -334,7 +436,7 @@ export default function Home() {
                 <p className="text-lg text-gray-200 mb-4">{services[selectedService].desc}</p>
                 <button
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold btn-service hover:scale-105 transition-all text-base w-max"
-                  onClick={() => window.location.hash = services[selectedService].detail}
+                  onClick={() => setShowServiceDetail(true)}
                 >
                   Hizmet Detay
                   <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
@@ -551,6 +653,142 @@ export default function Home() {
           </div>
         </section>
       </div>
+
+      {/* Service Detail Modal */}
+      {showServiceDetail && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+          <div className="bg-white rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
+            <div className="p-8">
+              {/* Header */}
+              <div className="flex items-center justify-between mb-8">
+                <div className="flex items-center gap-4">
+                  <span className="w-12 h-12 rounded-xl bg-[#5a6a85] flex items-center justify-center text-white text-2xl">
+                    {services[selectedService].icon}
+                  </span>
+                  <div>
+                    <h2 className="text-3xl font-black" style={{color: '#000000 !important'}}>
+                      {services[selectedService].title}
+                    </h2>
+                    <p className="mt-2" style={{color: '#000000 !important'}}>
+                      {services[selectedService].desc}
+                    </p>
+                  </div>
+                </div>
+                <button
+                  onClick={() => setShowServiceDetail(false)}
+                  className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors"
+                >
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" style={{color: '#000000 !important'}}>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+
+              {/* Content */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {/* Features */}
+                <div>
+                  <h3 className="text-xl font-bold mb-4 flex items-center gap-2" style={{color: '#000000 !important'}}>
+                    <svg className="w-5 h-5 text-[#5a6a85]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Özellikler
+                  </h3>
+                  <ul className="space-y-3">
+                    {services[selectedService].detailedInfo.features.map((feature, index) => (
+                      <li key={index} className="flex items-start gap-3">
+                        <div className="w-2 h-2 bg-[#5a6a85] rounded-full mt-2 flex-shrink-0"></div>
+                        <span style={{color: '#000000 !important'}}>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Process */}
+                <div>
+                  <h3 className="text-xl font-bold mb-4 flex items-center gap-2" style={{color: '#000000 !important'}}>
+                    <svg className="w-5 h-5 text-[#5a6a85]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    Süreç
+                  </h3>
+                  <div className="space-y-3">
+                    {services[selectedService].detailedInfo.process.map((step, index) => (
+                      <div key={index} className="flex items-start gap-3">
+                        <div className="w-6 h-6 bg-[#5a6a85] text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">
+                          {index + 1}
+                        </div>
+                        <span style={{color: '#000000 !important'}}>{step}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Pricing & Timeline */}
+              <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="text-xl font-bold mb-4 flex items-center gap-2" style={{color: '#000000 !important'}}>
+                    <svg className="w-5 h-5 text-[#5a6a85]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                    </svg>
+                    Fiyatlandırma
+                  </h3>
+                  <div className="space-y-3">
+                    <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                      <span style={{color: '#000000 !important'}}>Temel Paket</span>
+                      <span className="font-bold text-[#5a6a85]">{services[selectedService].detailedInfo.pricing.basic}</span>
+                    </div>
+                    <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                      <span style={{color: '#000000 !important'}}>Gelişmiş Paket</span>
+                      <span className="font-bold text-[#5a6a85]">{services[selectedService].detailedInfo.pricing.advanced}</span>
+                    </div>
+                    <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                      <span style={{color: '#000000 !important'}}>Premium Paket</span>
+                      <span className="font-bold text-[#5a6a85]">{services[selectedService].detailedInfo.pricing.premium}</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-bold mb-4 flex items-center gap-2" style={{color: '#000000 !important'}}>
+                    <svg className="w-5 h-5 text-[#5a6a85]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Süre
+                  </h3>
+                  <div className="p-4 bg-[#5a6a85] text-white rounded-lg">
+                    <p className="text-lg font-bold">{services[selectedService].detailedInfo.timeline}</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* CTA Buttons */}
+              <div className="mt-8 flex flex-col sm:flex-row gap-4">
+                <button
+                  onClick={() => {
+                    setShowServiceDetail(false)
+                    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
+                  }}
+                  className="btn-service px-8 py-4 rounded-xl font-bold text-lg shadow-lg transition-all duration-300 flex items-center justify-center gap-2"
+                  style={{boxShadow:'0 4px 24px 0 rgba(90,106,133,0.15)'}}
+                >
+                  Teklif Alın
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </button>
+                <button
+                  onClick={() => setShowServiceDetail(false)}
+                  className="px-8 py-4 rounded-xl font-bold text-lg border-2 border-[#5a6a85] text-[#5a6a85] bg-transparent hover:bg-[#5a6a85] hover:text-white transition-all duration-300"
+                >
+                  Kapat
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

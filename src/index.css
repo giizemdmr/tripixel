@@ -551,3 +551,16 @@ header .header-dropdown-button {
 header .header-dropdown-button:hover {
   color: #000000 !important;
 }
+
+/* Force black text for service detail modal */
+.bg-white.rounded-3xl.max-w-4xl * {
+  color: #000000 !important;
+}
+
+.bg-white.rounded-3xl.max-w-4xl .text-white {
+  color: #ffffff !important;
+}
+
+.bg-white.rounded-3xl.max-w-4xl .text-\[\#5a6a85\] {
+  color: #5a6a85 !important;
+}
