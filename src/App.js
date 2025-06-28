@@ -3,7 +3,9 @@ import Home from "./pages/Home"
 import Login from "./pages/Login"
 import Register from "./pages/Register"
 import About from "./pages/About"
+import ProjectDetail from "./pages/ProjectDetail"
 import { AuthProvider } from "./context/AuthContext"
+import AIAssistant from "./components/AIAssistant"
 
 import Header from "./components/Header"
 import Footer from "./components/Footer"
@@ -39,9 +41,11 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/about" element={<About />} />
+            <Route path="/project/:id" element={<ProjectDetail />} />
           </Routes>
         </main>
         <Footer />
+        <AIAssistant />
       </AuthProvider>
     </Router>
   )

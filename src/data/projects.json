@@ -1,5 +1,32 @@
 [
     {
+      "id": 9,
+      "title": "Hukuk Bürosu",
+      "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop",
+      "designer": "Trivess Design",
+      "votes": 145,
+      "description": "Modern ve profesyonel hukuk bürosu web sitesi. Güvenilir ve erişilebilir tasarım ile hukuki hizmetlerinizi dijitalde sunun. Responsive tasarım ve kullanıcı dostu arayüz.",
+      "url": "https://hukuk-burosu-one.vercel.app/"
+    },
+    {
+      "id": 10,
+      "title": "Ayvalık Zeytinyağı Store",
+      "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=800&h=600&fit=crop",
+      "designer": "Trivess Design",
+      "votes": 132,
+      "description": "E-ticaret odaklı zeytinyağı satış platformu. Geleneksel lezzetleri modern teknoloji ile buluşturan, kullanıcı dostu online mağaza tasarımı.",
+      "url": "https://ayvalik-zeytinyagi-store.vercel.app/"
+    },
+    {
+      "id": 11,
+      "title": "Meryem Portfolio",
+      "image": "/images/meryem.jpg",
+      "designer": "Trivess Design",
+      "votes": 118,
+      "description": "Kişisel portföy ve blog sitesi. Yaratıcı profesyoneller için özel tasarlanmış, modern ve etkileyici portföy platformu.",
+      "url": "https://meryem-portfolio-delta.vercel.app/"
+    },
+    {
       "id": 1,
       "title": "Modern Design Studio",
       "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop",

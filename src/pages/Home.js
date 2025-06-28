@@ -447,7 +447,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-white">Email</h3>
-                    <p className="text-white">info@trivess.com</p>
+                    <p className="text-white">trivess@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-6">
@@ -458,7 +458,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-white">Telefon</h3>
-                    <p className="text-white">+90 555 123 4567</p>
+                    <p className="text-white">0539 616 63 42</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-6">
@@ -470,7 +470,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-white">Adres</h3>
-                    <p className="text-white">İstanbul, Türkiye</p>
+                    <p className="text-white">İstanbul / Pendik, Türkiye</p>
                   </div>
                 </div>
               </div>

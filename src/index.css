@@ -529,3 +529,25 @@ h1, h2, h3, h4, h5, h6, p, span, a, li, label, div, strong, em, small, th, td, b
   color: #ffffff !important;
   background: rgba(55, 65, 81, 0.8) !important;
 }
+
+/* Force black text for navigation menu items */
+header nav button {
+  color: #000000 !important;
+}
+
+header nav button:hover {
+  color: #000000 !important;
+}
+
+header nav button svg {
+  color: #000000 !important;
+}
+
+/* Force black text for dropdown menu items */
+header .header-dropdown-button {
+  color: #000000 !important;
+}
+
+header .header-dropdown-button:hover {
+  color: #000000 !important;
+}

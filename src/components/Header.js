@@ -81,8 +81,9 @@ export default function Header() {
             className={`font-semibold transition-all duration-300 px-3 py-2 rounded-lg ${
               activeSection === 'home'
                 ? "text-gray-900 dark:text-white bg-gray-100 dark:bg-gray-800 shadow-sm" 
-                : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800/50"
+                : "text-black dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800/50"
             }`}
+            style={{color: '#000000 !important'}}
           >
             Ana Sayfa
           </button>
@@ -92,8 +93,9 @@ export default function Header() {
             className={`font-semibold transition-all duration-300 px-3 py-2 rounded-lg ${
               activeSection === 'about'
                 ? "text-gray-900 dark:text-white bg-gray-100 dark:bg-gray-800 shadow-sm" 
-                : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800/50"
+                : "text-black dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800/50"
             }`}
+            style={{color: '#000000 !important'}}
           >
             Kurumsal
           </button>
@@ -105,8 +107,9 @@ export default function Header() {
               className={`font-semibold transition-all duration-300 px-3 py-2 rounded-lg flex items-center gap-1 ${
                 activeSection === 'services'
                   ? "text-gray-900 dark:text-white bg-gray-100 dark:bg-gray-800 shadow-sm" 
-                  : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800/50"
+                  : "text-black dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800/50"
               }`}
+              style={{color: '#000000 !important'}}
             >
               Hizmetlerimiz
               <svg className={`w-4 h-4 transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -133,8 +136,9 @@ export default function Header() {
             className={`font-semibold transition-all duration-300 px-3 py-2 rounded-lg ${
               activeSection === 'projects'
                 ? "text-gray-900 dark:text-white bg-gray-100 dark:bg-gray-800 shadow-sm" 
-                : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800/50"
+                : "text-black dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800/50"
             }`}
+            style={{color: '#000000 !important'}}
           >
             Projeler
           </button>
@@ -144,8 +148,9 @@ export default function Header() {
             className={`font-semibold transition-all duration-300 px-3 py-2 rounded-lg ${
               activeSection === 'blog'
                 ? "text-gray-900 dark:text-white bg-gray-100 dark:bg-gray-800 shadow-sm" 
-                : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800/50"
+                : "text-black dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800/50"
             }`}
+            style={{color: '#000000 !important'}}
           >
             Blog
           </button>
@@ -155,8 +160,9 @@ export default function Header() {
             className={`font-semibold transition-all duration-300 px-3 py-2 rounded-lg ${
               activeSection === 'faq'
                 ? "text-gray-900 dark:text-white bg-gray-100 dark:bg-gray-800 shadow-sm" 
-                : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800/50"
+                : "text-black dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800/50"
             }`}
+            style={{color: '#000000 !important'}}
           >
             SSS
           </button>
